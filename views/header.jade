@@ -1,0 +1,22 @@
+div(role="navigation" class="navbar navbar-default")
+  .navbar-header
+    button(type="button" data-toggle="collapse" data-target="#nav-collapse" class="navbar-toggle")
+    .sr-only Basculer la navigation
+    .icon-bar
+    .icon-bar
+    .icon-bar
+  a(href="http://www.paris-web.fr/" class="navbar-brand")
+
+  #nav-collapse.collapse.navbar-collapse
+    ul.nav.navbar-nav
+      li
+        a(href="http://www.paris-web.fr/lieux/")
+          i.fa.fa-info-circle Lieux et infos
+      li
+        a(href="http://www.paris-web.fr/contact/")
+          i.fa.fa-envelope Contact
+    ul.nav.navbar-nav.pull-right
+      li
+        a(href="/proposal/submitProposal?lang=fr&execution=e2s1") Français
+      li
+        a(href="/proposal/submitProposal?lang=en&execution=e2s1") Anglais

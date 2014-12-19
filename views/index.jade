@@ -1,0 +1,34 @@
+extends layout
+
+block flashes
+  .alert.alert-danger
+    | Toto
+  div.bs-callout.bs-callout-success
+    h4 No default class
+    p Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so you're required to specify a type via contextual class. Choose from success, info, warning, or danger.
+
+  div.bs-callout.bs-callout-info
+    h4 No default class
+    p Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so you're required to specify a type via contextual class. Choose from success, info, warning, or danger.
+  div.bs-callout.bs-callout-warning
+    h4 No default class
+    p Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so you're required to specify a type via contextual class. Choose from success, info, warning, or danger.
+  div.bs-callout.bs-callout-danger
+    h4 No default class
+    p Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so you're required to specify a type via contextual class. Choose from success, info, warning, or danger.
+  div.alert.alert-success(role='alert')
+    strong Well done!
+    |  You successfully read this important alert message.
+  div.alert.alert-info(role='alert')
+    strong Heads up!
+    |  This alert needs your attention, but it's not super important.
+  div.alert.alert-warning(role='alert')
+    strong Warning!
+    |  Better check yourself, you're not looking too good.
+  div.alert.alert-danger(role='alert')
+    strong Oh snap!
+    |  Change a few things up and try submitting again.
+
+block content
+  h1= title
+  p Welcome to #{title}

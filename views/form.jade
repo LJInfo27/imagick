@@ -1,0 +1,34 @@
+form.form-horizontal(method='post', enctype="multipart/form-data")
+  fieldset
+    // Form Name
+    legend i-magick
+    // File Button
+    .form-group
+      label.col-md-4.control-label(for='imagick-upload') Picture
+      .col-md-4
+        input#imagick-upload.input-file(type='file', name='imagick-upload', required)
+    // Select Basic
+    .form-group
+      label.col-md-4.control-label(for='imagick-keeptime') Keep for
+      .col-md-5
+        select#imagick-keeptime.form-control(name='imagick-keeptime', required)
+          option(value='3h') 3 hours
+          option(value='6h') 6 hours
+          option(value='12h') 12 hours
+          option(value='1d') 24 hours
+          option(value='2d') 2 days
+          option(value='1w') 1 week
+          option(value='1m') 1 month
+          option(value='1y') 1 year
+    // Multiple Checkboxes (inline)
+    .form-group
+      label.col-md-4.control-label(for='imagick-stats') Tracking
+      .col-md-4
+        label.checkbox-inline(for='imagick-stats-0')
+          input#imagick-stats-0(type='checkbox', value='yes', name='imagick-stats')
+          | Count view number
+    // Button
+    .form-group
+      label.col-md-4.control-label(for='singlebutton') Single Button
+      .col-md-4
+        button#singlebutton.btn.btn-primary(name='singlebutton') Button
