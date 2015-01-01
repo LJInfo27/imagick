@@ -1,5 +1,7 @@
 # Created by https://www.gitignore.io
 
+/public/files/*
+
 ### vim ###
 [._]*.s[a-w][a-z]
 [._]s[a-w][a-z]
